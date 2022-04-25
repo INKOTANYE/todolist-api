@@ -4,9 +4,9 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "NODE_ENV=development ./node_modules/.bin/netlify-lambda serve functions",
-    "build": "NODE_ENV=production ./node_modules/.bin/netlify-lambda build functions"
+    "build": "webpack",
+    "dev": "webpack --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -28,6 +28,11 @@
     "serverless-http": "^3.0.1"
   },
   "devDependencies": {
-    "dotenv-webpack": "^7.1.0"
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.9",
+    "@babel/preset-env": "^7.16.11",
+    "babel-loader": "^8.2.5",
+    "dotenv-webpack": "^7.1.0",
+    "webpack": "^5.72.0"
   }
 }
