@@ -1,0 +1,26 @@
+{
+  "name": "todo-list-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "NODE_ENV=development ./node_modules/.bin/netlify-lambda serve src",
+    "build": "NODE_ENV=production ./node_modules/.bin/netlify-lambda build src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/INKOTANYE/todolist-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/INKOTANYE/todolist-api/issues"
+  },
+  "homepage": "https://github.com/INKOTANYE/todolist-api#readme",
+  "dependencies": {
+    "express": "^4.18.0",
+    "netlify-lambda": "^2.0.15",
+    "serverless-http": "^3.0.1"
+  }
+}
