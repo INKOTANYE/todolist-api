@@ -22,5 +22,8 @@
     "express": "^4.18.0",
     "netlify-lambda": "^2.0.15",
     "serverless-http": "^3.0.1"
+  },
+  "devDependencies": {
+    "dotenv-webpack": "^7.1.0"
   }
 }
