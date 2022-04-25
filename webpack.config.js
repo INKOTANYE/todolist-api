@@ -1,10 +1,6 @@
 const path = require("path")
 
 module.exports = {
-  output: {
-    filename: "bundled.js",
-    path: path.resolve(__dirname, "dist")
-  },
   mode: "production",
   module: {
     rules: [
