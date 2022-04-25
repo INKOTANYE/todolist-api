@@ -98,3 +98,4 @@ app.use(`/.netlify/functions/server`, router);
 module.exports = app;
 module.exports.handler = serverless(app);
 
+app.listen(process.env.PORT, console.log(`Server running`.green.bold));
