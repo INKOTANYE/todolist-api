@@ -2,6 +2,7 @@ const express = require("express");
 const dotenv = require("dotenv");
 const cors = require("cors");
 const colors = require('colors');
+const path = require("path");
 const serverless = require("serverless-http");
 const { json } = require("body-parser");
 const { nanoid } = require("nanoid");
@@ -9,7 +10,8 @@ const { nanoid } = require("nanoid");
 dotenv.config({ path: "./config.env" });
 
 const app = express();
-const router = express.Router();
+
+app.use(express.static(path.join(__dirname, "public")))
 
 app.use(cors());
 app.use(json());
@@ -89,11 +91,6 @@ app.patch("/todos/toggleAll/:id", (req, res) => {
 
 });
 
-router.get("/", (req, res) => {
-  res.json(todos);
-});
-
-app.use(`/.netlify/functions/server`, router);
 
 module.exports = app;
 module.exports.handler = serverless(app);
