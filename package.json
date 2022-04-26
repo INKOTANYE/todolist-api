@@ -2,9 +2,9 @@
   "name": "todo-list-api",
   "version": "1.0.0",
   "description": "",
-  "main": "src/server.js",
+  "main": "express/server.js",
   "scripts": {
-    "build": "netlify-lambda build express",
+    "build": "netlify-lambda build",
     "start": "nodemon server-local.js"
   },
   "repository": {
