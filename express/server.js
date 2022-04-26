@@ -107,6 +107,3 @@ app.use('/', (req, res) => res.sendFile(path.join(__dirname, '../index.html')));
 module.exports = app;
 module.exports.handler = serverless(app);
 
-const appLocal = require('./express/server');
-
-appLocal.listen(3000, () => console.log('Local app listening on port 3000!'));
