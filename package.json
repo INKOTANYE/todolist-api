@@ -20,14 +20,25 @@
   },
   "homepage": "https://github.com/INKOTANYE/todolist-api#readme",
   "dependencies": {
+    "browserify-zlib": "^0.2.0",
     "colors": "^1.4.0",
     "cors": "^2.8.5",
+    "crypto-browserify": "^3.12.0",
+    "crypto-js": "^4.1.1",
     "express": "^4.18.0",
+    "fs": "^0.0.1-security",
+    "http": "^0.0.1-security",
     "nanoid": "^3.3.3",
+    "net": "^1.0.2",
     "netlify-lambda": "^2.0.15",
+    "os": "^0.1.2",
     "path": "^0.12.7",
     "serverless-http": "^3.0.1",
-    "webpack-cli": "^4.9.2"
+    "stream": "^0.0.2",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "webpack-cli": "^4.9.2",
+    "zlib": "^1.0.5"
   },
   "devDependencies": {
     "@babel/cli": "^7.17.6",
